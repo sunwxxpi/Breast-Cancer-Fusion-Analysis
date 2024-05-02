@@ -32,5 +32,5 @@ def analyze_dicom_files(directory, output_file):
 
 
 directory = './strain_dcm/score1'
-output_file = './strain_dcm/socre1_analysis.txt'
+output_file = './strain_dcm/score1_analysis.txt'
 analyze_dicom_files(directory, output_file)
