@@ -1,0 +1,8 @@
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+
+.DS_Store
+
+strain_dcm
+strain_png
