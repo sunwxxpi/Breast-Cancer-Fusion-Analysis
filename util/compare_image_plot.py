@@ -4,7 +4,7 @@ import matplotlib.image as mpimg
 from matplotlib.gridspec import GridSpec
 
 base_dir = "./strain_png"
-sub_dirs = ["S", "elastography_region_from_grayscale", "elastography_region"]
+sub_dirs = ["S", "elastogram_from_grayscale_cropped", "elastogram_cropped"]
 score_dirs = ["score1", "score2", "score3", "score4", "score5"]
 
 for score in score_dirs:
@@ -37,7 +37,7 @@ for score_dir in score_dirs:
         fig.subplots_adjust(left=0, right=1, top=1, bottom=0, wspace=0.03, hspace=0)
 
         save_path = os.path.join(f"./strain_png/plot_images/{score_dir}", img_file)
-        plt.savefig(save_path, bbox_inches='tight', pad_inches=0)
+        plt.savefig(save_path, bbox_inches='tight', pad_inches=0.1, dpi=300)
         plt.close()
 
 print("모든 이미지 처리가 완료되었습니다.")
