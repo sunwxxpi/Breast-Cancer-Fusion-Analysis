@@ -4,5 +4,4 @@ __pycache__
 
 .DS_Store
 
-strain_dcm
-strain_png
+data
